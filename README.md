@@ -1,1 +1,1 @@
-See documentation [here](https://ts-ip.bitradius.dev/classes/IP.html)
+See documentation [here](https://ts-ip.bitradius.dev/classes/ip.html)
