@@ -149,6 +149,11 @@ describe('Functional Tests', () => {
                 dotted: '2607:f8b0:4009:805::200e',
                 expanded: '2607:f8b0:4009:805:0:0:0:200e',
                 decimal: BigInteger('2607f8b040090805000000000000200e', 16)
+            },
+            {
+                dotted: '2607:f8b0:4009:805::',
+                expanded: '2607:f8b0:4009:805:0:0:0:0',
+                decimal: BigInteger('2607f8b0400908050000000000000000', 16)
             }
         ];
 

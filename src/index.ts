@@ -239,7 +239,9 @@ export class IP {
                 const ins = 8 - octets.length + 1;
 
                 for (let i = 0; i < ins; i++) {
-                    tmp.push('0000');
+                    if (tmp.length < 8) {
+                        tmp.push('0000');
+                    }
                 }
             }
         }
@@ -266,6 +268,8 @@ export class IP {
             address = ':' + address;
         } else if (address.length === 0) {
             address = '::';
+        } else if (address.endsWith(':')) {
+            address += ':';
         }
 
         return address.split(':')
